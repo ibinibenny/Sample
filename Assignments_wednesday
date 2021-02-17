@@ -28,9 +28,8 @@ sampleDict = {
 18.Python3 program to multiply all values in the list using lambda function and reduce()
 19.Python program to remove multiple elements from a list.
 20.You can input a tuple from the user as follows:
-
     a.Create an empty list.
     b.Input elements of the list from the user.
     c.Convert the list into a tuple.  
-21.Write a Python script to generate and print a dictionary that contains a number (between 1 and n) in the form (x, x*x).
+21.Write a Python program to generate and print a dictionary that contains a number (between 1 and n) in the form (x, x*x).
 22.Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers. 
