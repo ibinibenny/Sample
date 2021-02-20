@@ -17,7 +17,7 @@ class car:
 		print("horn")
 obj=car()
 obj.drive()
-obj.__bluecar()
+#obj.__bluecar()
 
 
 # private variable
