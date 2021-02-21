@@ -1,0 +1,3 @@
+dic={'dog':'willie','cat':'snowbell','fish':'goldy'}
+for i in dic.keys():
+	print(dic[i],'is a',i)
