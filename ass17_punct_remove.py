@@ -1,9 +1,8 @@
 
-def rmvpunct(str1):
-	str2=str1.replace('.',' ')
-	str2=str2.replace(',',' ')
-	str2=str2.replace('(',' ')
-	str2=str2.replace(')',' ')
-	return str2
-
-print(rmvpunct(input("enter a multisentence string")))
+punctuation='''''!()-[]{};:'"\,<>./?@#$%^&*_~'''  
+a=input("enter a string:")
+b=""
+for i in a:
+	if i not in punctuation:
+		b=b+i
+print("string without punctuation",b)
