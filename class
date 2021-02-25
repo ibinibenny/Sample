@@ -1,0 +1,100 @@
+Method Overloading in Python?
+Ajomol
+2017-08-17 13:06
+0 Comments
+
+Polymorphism : -
+
+        Polymorphism is based on the greek words Poly (many) and morphism (forms).  Wewill create a structure that can take or use many forms of objects. Polymorphism can be referred as the process of taking many forms by a same object.
+
+1. Compile time Polymorphism
+
+2. Runtime Polymorphism
+
+Method overloading : -
+
+In Python you can define a method in such a way that there are multiple waysto call it. Given a single method or function, we can specify the number of parameters ourself. Depending on the function definition, it can be called with zero, one, two or more parameters. This is known as method overloading. Example :
+
+class Human:
+ 
+    def sayHello(self, name=None):
+ 
+        if name is not None:
+            print 'Hello ' + name
+        else:
+            print 'Hello '
+ 
+# Create instance
+obj = Human()
+ 
+# Call the method
+obj.sayHello()
+ 
+# Call the method with a parameter
+obj.sayHello('Guido')
+
+
+
+
+Method Overriding :-
+
+Overriding is the ability of a class to change the implementation of a method provided by one of its ancestors. Overriding is a very important part of OOP since it is the feature that makes inheritance exploit its full power. In Python method overriding occurs simply defining in the child class a method with the same name of a method in the parent class. When you define a method in the object you make this latter able to satisfy that method call, so the implementations of its ancestors do not come in play.
+
+class Parent:        # define parent class
+   def myMethod(self):
+      print 'Calling parent method'
+
+class Child(Parent): # define child class
+   def myMethod(self):
+      print 'Calling child method'
+
+c = Child()          # instance of child
+c.myMethod()         # child calls overridden method
+
+
+Output :
+   Calling child method
+   
+   
+  (---Method Overloading---)
+#
+# class Student:
+#
+#     def __init__(self,m1,m2):
+#         self.m1 = m1
+#         self.m2 = m2
+#
+#     def sum(self,a=None,b=None,c=None):
+#
+#         s = 0
+#
+#         if a!=None and b!=None and c!=None:
+#           s = a+b+c
+#         elif a!=None and b!=None:
+#             s = a+b
+#         else:
+#             s = a
+#
+#         return s
+#
+#
+# s1 = Student(58,69)
+#
+# print(s1.sum(5))
+
+
+                        (---Method Overriding---)
+
+class A:
+
+    def show(self):
+        print("in A Show")
+
+class B(A):
+
+    def show(self):
+        print("in B Show")
+
+
+a1 = B()
+a1.show()
