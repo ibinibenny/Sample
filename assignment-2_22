@@ -1,0 +1,6 @@
+marks={"english:":40,"maths:":60,"hindi:":30,"chemistry:":46,"physics:":70}
+print(marks)
+marks["chemistry:"]=65
+marks["hindi:"]=55
+marks["english:"]=50
+print(marks)
