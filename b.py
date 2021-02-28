@@ -1,4 +1,4 @@
- class Demo:
+class Demo:
 	num1=3
 	
 	def __init__(self,num2):
