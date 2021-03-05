@@ -1,0 +1,19 @@
+ # Write a python program that matches a string only contain 0-9 as the characters and it must be at least 1 char in length and no more than 6.
+ 
+ 
+ import re
+
+
+def text_match(text):
+        patterns = '[0-9]{5}$'
+
+        if re.match(patterns,  text):
+               print('Found a match!')
+        else:
+                print('Not matched!')
+
+text_match("345")
+text_match("22345667")
+ 
+ 
+ 
