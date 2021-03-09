@@ -1,0 +1,14 @@
+CREATE TABLE artists (
+  id    INTEGER PRIMARY KEY, 
+  name  TEXT
+);
+
+CREATE TABLE tracks (
+  traid     INTEGER, 
+  title   TEXT, 
+  artist_id INTEGER,
+  FOREIGN KEY(artist) REFERENCES artists(id)
+);
+
+
+
