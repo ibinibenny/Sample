@@ -3,8 +3,7 @@
 SELECT orders.ord_no, customer.cust_name
 FROM orders, customer
 WHERE orders.customer_id = customer.customer_id; 
-
-5. Write a SQL statement that sorts out the customer and their grade who made an order. 
+7. Write a SQL statement that sorts out the customer and their grade who made an order. 
 Each of the customers must have a grade and served by at least a salesman, who belongs to a city.
 
 SELECT customer.cust_name AS "Customer",
