@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	<div class="container" >
+		<div class="alert alert-info"> 
+			it is completed 
+		</div>
+		<div class="alert alert-success">
+			it is successful
+		</div>
+		<div class="alert alert-warning">
+			something missing..!
+		</div>
+		<div class="alert alert-danger">
+			danger
+		</div>
+	</div>
+	</body>
+</html>
