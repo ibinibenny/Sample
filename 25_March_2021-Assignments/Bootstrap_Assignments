@@ -1,0 +1,23 @@
+Bootstrap Grid System:
+
+1.Bootstrap one column grid layout for all devices.
+2.Bootstrap two column grid layouts for all devices.
+3.Bootstrap three column grid layouts for all devices.
+4.Bootstrap three column grid for layouts tablets and desktops.
+5.Bootstrap four column convertible grid layout with multiple views - 4 columns on desktops, 2 columns on tablets, one column on mobiles.
+6.Bootstrap nested grid columns layout.
+7.Bootstrap multi column grid layout for all devices.
+8.Bootstrap responsive layout.
+
+Bootstrap Tables:
+
+9.Creating simple tables with Bootstrap.
+10.Creating dark tables with Bootstrap.
+11.Bootstrap table with alternate background.
+12.Bootstrap table with borders.
+13.Enable hover state on table rows.
+14.Setting dark background for table head with Bootstrap.
+15.Bootstrap emphasis classes for table rows.
+16.Bootstrap responsive tables.
+
+
