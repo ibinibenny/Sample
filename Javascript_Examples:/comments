@@ -23,3 +23,14 @@ document.write(c);//prints sum of 10 and 20
 </script>   
 </body>
 </html>
+
+
+<html>
+<body>
+<script>  
+/* It is multi line comment.  
+It will not be displayed */  
+document.write("example of javascript multiline comment");  
+</script>  
+</body>
+</html>
