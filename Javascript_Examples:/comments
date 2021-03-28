@@ -1,0 +1,25 @@
+JavaScript Comment:
+
+The JavaScript comments are meaningful way to deliver message. 
+It is used to add information about the code, warnings or suggestions so that end user can easily interpret the code.
+
+<html>
+<body>
+<script>  
+// It is single line comment  
+document.write("hello javascript");  
+</script> 
+</body>
+</html>
+
+
+<html>
+<body>
+<script>  
+var a=10;  
+var b=20;  
+var c=a+b;//It adds values of a and b variable  
+document.write(c);//prints sum of 10 and 20  
+</script>   
+</body>
+</html>
