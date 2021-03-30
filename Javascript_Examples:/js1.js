@@ -1,14 +1,14 @@
-function required()
-{
-var empt = document.form1.text1.value;
-if (empt === "")
-{
-alert("Please enter the Value");
-return false;
-}
-else 
-{
-alert("code successfully accepted");
-return true; 
-}
-}
+function allLetter(inputtxt)
+      { 
+      var letters = /^[A-Za-z]+$/;
+      if(inputtxt.value.match(letters))
+      {
+      alert('Your name have accepted : you can try another');
+      return true;
+      }
+      else
+      {
+      alert('Please input alphabet characters only');
+      return false;
+      }
+      }
