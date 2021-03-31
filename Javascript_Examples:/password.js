@@ -1,7 +1,7 @@
 function CheckPassword(inputtxt) 
 { 
-var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
-if(inputtxt.value.match(paswd)) 
+var passw=  /^[A-Za-z]\w{7,14}$/;
+if(inputtxt.value.match(passw)) 
 { 
 alert('Correct, try another...')
 return true;
@@ -11,4 +11,4 @@ else
 alert('Wrong...!')
 return false;
 }
-}  
+} 
