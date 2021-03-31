@@ -124,21 +124,21 @@ alert("You have entered an invalid email address!");
 uemail.focus();
 return false;
 }
-} function validsex(umsex,ufsex)
+} function validgender(umgender,ufgender)
 {
 x=0;
 
-if(umsex.checked) 
+if(umgender.checked) 
 {
 x++;
-} if(ufsex.checked)
+} if(ufgender.checked)
 {
 x++; 
 }
 if(x==0)
 {
 alert('Select Male/Female');
-umsex.focus();
+umgender.focus();
 return false;
 }
 else
