@@ -1,0 +1,31 @@
+JSON is a file format used to store information in an organized and easy-to-access manner. Its full form is JavaScript Object Notation. 
+It offers a human-readable collection of data that can be accessed logically. Its filename extension for written programming code is .json. 
+
+
+
+Application of JSON
+
+Here are some common applications of JSON:
+
+    Helps you to transfer data from a server
+    JSON format helps transmit and serialize all types of structured data.
+    Allows you to perform asynchronous data calls without the need to do a page refresh
+    Helps you to transmit data between a server and web applications.
+    It is widely used for JavaScript-based application, which includes browser extension and websites.
+    You can transmit data between the server and web application using JSON.
+    We can use JSON with modern programming languages.
+    It is used for writing JavaScript-based applications that include browser add-ons.
+    Web services and Restful APIs use the JSON format to get public data.
+    
+    
+        Provide support for all browsers
+    Easy to read and write
+    Straightforward syntax
+    You can natively parse in JavaScript using eval() function
+    Easy to create and manipulate
+    Supported by all major JavaScript frameworks
+    Supported by most backend technologies
+    JSON is recognized natively by JavaScript
+    It allows you to transmit and serialize structured data using a network connection.
+    You can use it with modern programming languages.
+    JSON is text which can be converted to any object of JavaScript into JSON and send this JSON to the server.
