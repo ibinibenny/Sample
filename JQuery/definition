@@ -1,0 +1,17 @@
+jQuery is a JavaScript Library that is very fast in execution and small in size. 
+It simplifies coding by making the codes smaller and easier to write. 
+It contains large number of in-built functions that make DOM Manipulations, 
+Event Handling, AJAX & API calls, Animation Effects and Validations easier to use. 
+
+
+Important Features of jQuery
+
+1. Separates JavaScript with HTML
+2. Speeds up the Code Development
+
+How to use jQuery
+
+There are 2 ways to use jQuery in your web page –
+
+    Download jQuery in your Website and Reference it
+    Use the jQuery from the CDN to Reference it
