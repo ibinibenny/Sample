@@ -1,0 +1,80 @@
+Mouseup():
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script>    
+$(document).ready(function(){    
+    $("#h1").mouseup(function(){    
+       $( "div" ).text( "Bye Bye... mouse up event triggered" ).show().fadeOut( 2000 );   
+    });    
+});    
+</script>    
+</head>    
+<body>    
+<h1 id="h1">Enter this heading.</h1>   
+<div></div>   
+</body>    
+</html> 
+
+Mousedown():
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script>    
+$(document).ready(function(){    
+    $("#h1").mousedown(function(){    
+       $( "div" ).text( "mouse down event triggered" ).show().fadeOut( 2000 );   
+    });    
+});    
+</script>    
+</head>    
+<body>    
+<h1 id="h1">Enter this heading.</h1>   
+<div></div>   
+</body>    
+</html> 
+
+
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script>    
+$(document).ready(function(){    
+    $("#h1").mousedown(function(){    
+       $( "div" ).text( "mouse down event triggered" ).show().fadeOut( 2000 );   
+    });    
+});    
+</script>    
+</head>    
+<body>    
+<h1 id="h1">Enter this heading.</h1>   
+<div></div>   
+</body>    
+</html>  
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").mousedown(function(){  
+        $("p").css("background-color", "blue");  
+    });  
+    $("p").mouseup(function(){  
+        $("p").css("background-color", "lightyellow");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Press down the mouse left button over this p element</p>  
+</body>  
+</html>  

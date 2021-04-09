@@ -1,0 +1,66 @@
+The jQuery keyup() event occurs when a keyboard button is released after pressing.
+
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script>  
+    $(document).ready(function(){  
+        $("input").keydown(function(){  
+            $("input").css("background-color", "green");  
+        });  
+        $("input").keyup(function(){  
+            $("input").css("background-color", "violet");  
+        });  
+    });  
+    </script>  
+    </head>  
+    <body>  
+    Write something: <input type="text">  
+    </body>  
+    </html>   
+    
+    
+    The jQuery keypress () event is occurred when a keyboard button is pressed down. 
+    
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+i = 0;  
+$(document).ready(function(){  
+    $("input").keypress(function(){  
+        $("span").text (i += 1);  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+Write something: <input type="text">  
+<p>Keypresses: <span>0</span></p>  
+</body>  
+</html> 
+
+When you press a key on the keyboard, the keydown() event is occurred and once the keydown() event is occurred, 
+it executes the function associated with keydown() method to run. 
+
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script>  
+    $(document).ready(function(){  
+        $("input").keydown(function(){  
+            $("input").css("background-color", "green");  
+        });  
+        $("input").keyup(function(){  
+            $("input").css("background-color", "violet");  
+        });  
+    });  
+    </script>  
+    </head>  
+    <body>  
+    Write something: <input type="text">  
+    </body>  
+    </html>   

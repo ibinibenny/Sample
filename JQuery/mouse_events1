@@ -1,0 +1,45 @@
+
+hover():
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").hover(function(){  
+        $(this).css("background-color", "violet");  
+        }, function(){  
+        $(this).css("background-color", "green");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Hover your mouse pointer on me!</p>  
+</body>  
+</html> 
+
+
+Mouseover() and Mouseout():
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").mouseover(function(){  
+        $("p").css("background-color", "lightgreen");  
+    });  
+    $("p").mouseout(function(){  
+        $("p").css("background-color", "orange");  
+      });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Move your cursor over this paragraph.</p>  
+</body>  
+</html>  
