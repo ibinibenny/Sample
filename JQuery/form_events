@@ -1,0 +1,118 @@
+Blur():
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("input").blur(function(){  
+        alert("This text box has lost its focus.");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+Enter your name: <input type="text">  
+</body>  
+</html> 
+
+Focus():
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title>focus demo</title>  
+  <style>  
+  span {  
+    display: none;  
+  }  
+  </style>  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+</head>  
+<body>  
+ <p><input type="text"> <span>Focus starts.. Write your name.</span></p>  
+<p><input type="password"> <span>Focus starts.. Write your password.</span></p>  
+ <script>  
+$( "input" ).focus(function() {  
+  $( this ).next( "span" ).css( "display", "inline" ).fadeOut( 2000 );  
+});  
+</script>  
+ </body>  
+</html> 
+
+change():
+
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+  <meta charset="utf-8">    
+  <title>change demo</title>    
+  <style>    
+  div {    
+    color: red;    
+  }    
+  </style>    
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>    
+</head>    
+<body>    
+ <select id="se" name="actors" >    
+  <option>Uthappa</option>    
+  <option selected="selected">Kattapa</option>    
+  <option>Veerappa</option>    
+  <option>Bahubali</option>    
+  <option>Bhallal Dev</option>    
+  <option>Awantika</option>    
+</select>    
+<div id="loc"></div>    
+ <script>    
+$( "select" ) .change(function () {    
+document.getElementById("loc").innerHTML="You selected: "+document.getElementById("se").value;  
+});  
+</script>    
+ </body>    
+</html> 
+
+submit():
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title>submit demo</title>  
+  <style>  
+  p {  
+    margin: 0;  
+    color: blue;  
+  }  
+  div,p {  
+    margin-left: 10px;  
+  }  
+  span {  
+    color: red;  
+  }  
+  </style>  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+</head>  
+<body>  
+<p>Type 'python' to submit this form finally.</p>  
+<form action="javascript:alert( 'success!' );">  
+  <div>  
+    <input type="text">  
+    <input type="submit">  
+  </div>  
+</form>  
+<span></span>  
+<script>  
+$( "form" ).submit(function( event ) {  
+  if ( $( "input:first" ).val() === "python" ) {  
+    $( "span" ).text( "Submitted Successfully." ).show();  
+    return;  
+  }  
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 2000 );  
+  event.preventDefault();  
+});  
+</script>  
+</body>  
+</html>
