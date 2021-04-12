@@ -59,14 +59,14 @@ It attaches an event handler to load event. It was deprecated in jQuery 1.8 vers
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
 <script>  
 $(document).ready(function(){  
-    $(window).unload(function(){  
-        alert("Goodbye!");  
-    });  
+    $( window ).unload(function() {
+  return "Bye now!";
+});  
 });  
 </script>  
 </head>  
 <body>  
-<p>When you click <a href="http://www.javatpoint.com/">this link</a>, or close the window,  
+<p>When you click <a href="http://www.javatpoint.com/" target='_blank'>this link</a>, or close the window,  
  unload event will be triggered.</p>  
 </body>  
 </html>  
