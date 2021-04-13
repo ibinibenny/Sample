@@ -1,0 +1,25 @@
+
+
+<html>
+<head>
+<title>jQuery get attribute example</title>
+   <script type="text/javascript" 
+   src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+   <script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+      var title = $("em").attr("title");
+	  alert(title);
+      $("#divid").text(title);
+   });
+
+   </script>
+</head>
+<body>
+   <div>
+      <em title=" my title attribute">jQuery get attributes</em>
+      <p id="myid">getting my title attribute- success.</p>
+      <div id="divid"></div>
+   </div>
+</body>
+</html>
