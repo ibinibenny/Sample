@@ -1,0 +1,60 @@
+MySQL is the most popular Open Source Relational SQL Database Management System.
+MySQL is one of the best RDBMS being used for developing various web-based software applications. 
+MySQL is developed, marketed and supported by MySQL AB, which is a Swedish company.
+
+SQL is a standard language for accessing and manipulating databases.
+
+
+
+
+What is SQL?
+
+    SQL stands for Structured Query Language
+    SQL lets you access and manipulate databases
+    SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+
+SQL CREATE DATABASE Statement:
+
+The CREATE DATABASE statement is used to create a new SQL database.
+
+Syntax
+CREATE DATABASE databasename;
+
+
+
+
+
+The SQL CREATE TABLE Statement
+
+The CREATE TABLE statement is used to create a new table in a database.
+Syntax
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+The column parameters specify the names of the columns of the table.
+
+The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).
+
+
+
+The SQL SELECT Statement
+
+The SELECT statement is used to select data from a database.
+
+The data returned is stored in a result table, called the result-set.
+SELECT Syntax
+SELECT column1, column2, ...
+FROM table_name;
+
+Here, column1, column2, ... are the field names of the table you want to select data from. 
+If you want to select all the fields available in the table, use the following syntax:
+
+SELECT * FROM table_name; 
+
+
+
+
