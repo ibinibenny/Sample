@@ -1,0 +1,85 @@
+from tkinter import *  
+  
+from tkinter import messagebox  
+  
+top = Tk()  
+  
+top.geometry("100x100")      
+  
+messagebox.showinfo("information","Information")  
+  
+top.mainloop()  
+
+
+
+
+
+
+
+from tkinter import *  
+  
+from tkinter import messagebox  
+  
+top = Tk()  
+top.geometry("100x100")  
+messagebox.showwarning("warning","Warning")  
+  
+top.mainloop()  
+
+
+
+
+from tkinter import *  
+from tkinter import messagebox  
+  
+top = Tk()  
+top.geometry("100x100")  
+messagebox.showerror("error","Error")  
+top.mainloop()  
+
+
+
+
+
+from tkinter import *  
+from tkinter import messagebox  
+  
+top = Tk()  
+top.geometry("100x100")  
+messagebox.askquestion("Confirm","Are you sure?")  
+top.mainloop()  
+
+
+
+
+from tkinter import *  
+from tkinter import messagebox  
+  
+top = Tk()  
+top.geometry("100x100")  
+messagebox.askokcancel("Redirect","Redirecting you to www.javatpoint.com")  
+top.mainloop()  
+
+
+
+from tkinter import *  
+from tkinter import messagebox  
+  
+top = Tk()  
+top.geometry("100x100")  
+messagebox.askyesno("Application","Got It?")  
+top.mainloop()  
+
+
+
+
+from tkinter import *  
+from tkinter import messagebox  
+  
+top = Tk()  
+top.geometry("100x100")  
+messagebox.askretrycancel("Application","try again?")  
+  
+top.mainloop() 
+
+
