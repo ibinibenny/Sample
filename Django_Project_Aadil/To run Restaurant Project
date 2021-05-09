@@ -1,0 +1,35 @@
+
+python@python-hp-notebook:~/Desktop/Aadil_Project$ source my-project-env1/bin/activate
+
+(my-project-env1) python@python-hp-notebook:~/Desktop/Aadil_Project$ cd Restaurant
+
+(my-project-env1) python@python-hp-notebook:~/Desktop/Aadil_Project/Restaurant$ pip install django
+
+Requirement already satisfied: django in /home/python/Desktop/Aadil_Project/my-project-env1/lib/python3.6/site-packages
+Requirement already satisfied: pytz in /home/python/Desktop/Aadil_Project/my-project-env1/lib/python3.6/site-packages (from django)
+Requirement already satisfied: sqlparse>=0.2.2 in /home/python/Desktop/Aadil_Project/my-project-env1/lib/python3.6/site-packages (from django)
+Requirement already satisfied: asgiref<4,>=3.3.2 in /home/python/Desktop/Aadil_Project/my-project-env1/lib/python3.6/site-packages (from django)
+Requirement already satisfied: typing-extensions; python_version < "3.8" in /home/python/Desktop/Aadil_Project/my-project-env1/lib/python3.6/site-packages (from asgiref<4,>=3.3.2->django)
+
+(my-project-env1) python@python-hp-notebook:~/Desktop/Aadil_Project/Restaurant$ python3 manage.py makemigrations
+No changes detected
+
+(my-project-env1) python@python-hp-notebook:~/Desktop/Aadil_Project/Restaurant$ python manage.py migrate
+
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+  
+(my-project-env1) python@python-hp-notebook:~/Desktop/Aadil_Project/Restaurant$ python manage.py runserver 8005
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 09, 2021 - 10:04:42
+Django version 3.2.2, using settings 'Restaurant.settings'
+Starting development server at http://127.0.0.1:8005/
+Quit the server with CONTROL-C.
+
+
+Browser url: http://127.0.0.1:8003/general/home/
