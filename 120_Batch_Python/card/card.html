@@ -1,32 +1,58 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<!-- Required meta tags -->
+  <head>
+    <title>Item List</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style3.css'%}"> -->
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+      <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
 <body>
-	<div class="container">
-		<h3>All category</h3>
 
-		
 
-			<div class="card" style="width: 18rem;">
-  					<img class="card-img-top" src="puppy.jpg" alt="Card image cap">
-  					<div class="card-body">
-    				<h5 class="card-title">Card title</h5>
-    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    				<a href="#" class="btn btn-primary">Go somewhere</a>
-  			</div>
-	</div>
+    <div class="bodyofpage">
+      
+      
+     <center><p class="heading">Job Details</p></center>
+     <div class="container">
+     {% for item in job %}
+        <div class="col-sm-3 productclass">
+          <center><!-- <img class="card-img-top" src="{{ item.image.url }}" alt="{{item.image}}" style="height: 15rem; width: 15rem ;" > -->
+          <div class="card-img-overly"></div>
+          </center>
+          <center>
+          <p class="card-text" >{{item.title}}</p>
+          
+          <p class="card-text" >{{item.job_type}}</p>
+          <p class="card-text" >{{item.category}}</p>
+          <p class="card-text" >{{item.status}}</p>
+          <a href="{% url 'delete_detail' item.id %}" class="btn btn-primary">Delete</a>
+          </center>
+        </div>
+    {% endfor %}
+      </div>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+
+
+
+
+
+
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>           
+      
+        
 </body>
 </html>
